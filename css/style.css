@@ -119,6 +119,7 @@ a {
   text-align: center;
 }
 
+
 /* Direction start */
 
 .direction {
@@ -307,6 +308,9 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+}
+.gallery__slider-mobile{
+  display: none;
 }
 
 .slick-btn {
@@ -519,6 +523,7 @@ a {
 
 /* Media start */
 
+
 @media (max-width: 1140px) {
   .direction__inner {
     grid-template-columns: repeat(3, 1fr);
@@ -591,6 +596,13 @@ a {
   }
   .gallery {
     padding-bottom: 50px;
+  }
+  .gallery__slider{
+    display: none;
+  }
+  .gallery__slider-mobile{
+    display: block;
+    margin: 0 auto;
   }
   .tour {
     padding: 50px 0;
